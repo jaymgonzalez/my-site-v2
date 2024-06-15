@@ -5,7 +5,7 @@ import Main from './components/main'
 export default function Home() {
   return (
     <>
-      <div className="relative">
+      <div className="relative __variable_20b187 group/spotlight">
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
           <a
             href="#content"
