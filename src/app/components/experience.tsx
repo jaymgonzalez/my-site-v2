@@ -1,5 +1,5 @@
 import { FaLink } from 'react-icons/fa6'
-import { TfiArrowTopRight } from 'react-icons/tfi'
+import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
 
 const experiences = [
   {
@@ -57,8 +57,8 @@ const experiences = [
 ]
 const Experiences = () => (
   <>
-    {experiences.map((exp) => (
-      <li className="mb-12" key={exp.title}>
+    {experiences.map((exp, index) => (
+      <li className="mb-12" key={index}>
         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
           <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:drop-shadow-lg"></div>
           <header
@@ -142,18 +142,22 @@ const Experience = () => {
       </ol>
       <div className="mt-12">
         <a
-          className="inline-flex items-baseline leading-tight  hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
+          className="inline-flex items-center leading-tight font-semibold text-slate-200 group"
           href="/resume.pdf"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="View Full Résumé (opens in a new tab)"
         >
           <span>
-            View Full{' '}
-            <span className="inline-block">
-              Résumé
-              <TfiArrowTopRight
-                className="inline-block shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px pl-1"
+            <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+              View Full{' '}
+            </span>
+            <span className="whitespace-nowrap">
+              <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                Résumé
+              </span>
+              <TfiArrowRight
+                className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none pl-1"
                 aria-hidden="true"
               />
             </span>
