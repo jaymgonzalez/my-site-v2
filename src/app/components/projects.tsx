@@ -9,8 +9,7 @@ const projects = [
     githubLink: 'https://github.com/bchiang7/spotify-profile',
     technologies: ['React', 'Express', 'Spotify API', 'Heroku'],
     imageAlt: 'Spotify Profile app homepage',
-    imageSrc:
-      'https://res.cloudinary.com/bchiang7/image/upload/v1630406826/portfolio/spotify-profile_v1.png',
+    imageSrc: '',
   },
   // Add more project objects as needed
 ]
