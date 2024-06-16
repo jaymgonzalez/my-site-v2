@@ -1,21 +1,16 @@
 import Image from 'next/image'
-import { TfiArrowRight } from 'react-icons/tfi'
+import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
 
 const projects = [
   {
-    title: 'Spotify',
-    subtitle: 'Profile',
-    link: 'https://spotify-profile.herokuapp.com/',
+    title: 'Spotify Profile',
     description:
       'Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
     githubLink: 'https://github.com/bchiang7/spotify-profile',
-    stars: '625',
     technologies: ['React', 'Express', 'Spotify API', 'Heroku'],
     imageAlt: 'Spotify Profile app homepage',
-    imageSrcSet:
-      '/_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&w=640&q=75 2x',
     imageSrc:
-      '/_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&w=640&q=75',
+      'https://res.cloudinary.com/bchiang7/image/upload/v1630406826/portfolio/spotify-profile_v1.png',
   },
   // Add more project objects as needed
 ]
@@ -30,56 +25,25 @@ const Project = () => (
             <h3>
               <a
                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                href={project.link}
+                href={project.githubLink}
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label={`${project.title} (opens in a new tab)`}
+                aria-label="GitHub project link (opens in a new tab)"
               >
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
                   {project.title}
                   <span className="inline-block">
-                    {project.subtitle}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                    <TfiArrowTopRight
+                      className="inline-block shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px pl-1"
                       aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                    />
                   </span>
                 </span>
               </a>
             </h3>
             <p className="mt-2 text-sm leading-normal">{project.description}</p>
-            <a
-              className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-              href={project.githubLink}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label={`${project.stars} stars on GitHub (opens in a new tab)`}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="mr-1 h-3 w-3"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <span>{project.stars}</span>
-            </a>
+
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
               {project.technologies.map((tech, index) => (
                 <li key={index} className="mr-1.5 mt-2">

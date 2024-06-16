@@ -1,4 +1,5 @@
 import About from './about'
+import Education from './education'
 import Experience from './experience'
 import Projects from './projects'
 
@@ -8,6 +9,7 @@ const Main = () => {
       <About />
       <Experience />
       <Projects />
+      <Education />
     </main>
   )
 }
