@@ -3,56 +3,68 @@ import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
 
 const experiences = [
   {
-    dateRange: 'July — Dec 2017',
-    title: 'UI Engineer Co-op',
-    company: 'Apple',
-    companyLink: 'https://www.apple.com/apple-music/',
-    description:
-      'Developed and styled interactive web apps for Apple Music, including the user interface of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-    relatedLinks: [
-      {
-        text: 'MusicKit.js',
-        link: 'https://developer.apple.com/documentation/musickitjs',
-        icon: '<icon_1>',
-      },
-      {
-        text: '9to5Mac',
-        link: 'https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/',
-        icon: '<icon_2>',
-      },
-      {
-        text: 'The Verge',
-        link: 'https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming',
-        icon: '<icon_3>',
-      },
+    dateRange: '2024 — Present',
+    title: 'DevOps Engineer',
+    workType: 'Contract',
+    company: 'Six Group',
+    companyLink: 'https://www.six-group.com/',
+    description: [
+      'Develop CI/CD pipelines for managing the alerting within the CyberSecurity department',
+      'Help the infrastructure team improving the way to manage their Elasticsearch infrastructure with Terraform and Gitlab',
+      'Automate the migration of dashboards in Elastic from QA to Prod creating a custom script that handles backup, deletion and updates in both environments',
     ],
-    technologies: ['Ember', 'SCSS', 'JavaScript', 'MusicKit.js'],
+    relatedLinks: [],
+    technologies: ['Gitlab', 'Terraform', 'Elasticsearch', 'Python'],
   },
   {
-    dateRange: 'July — Dec 2017',
-    title: 'UI Engineer Co-op',
-    company: 'Apple',
-    companyLink: 'https://www.apple.com/apple-music/',
-    description:
-      'Developed and styled interactive web apps for Apple Music, including the user interface of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.',
-    relatedLinks: [
-      {
-        text: 'MusicKit.js',
-        link: 'https://developer.apple.com/documentation/musickitjs',
-        icon: '<icon_1>',
-      },
-      {
-        text: '9to5Mac',
-        link: 'https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/',
-        icon: '<icon_2>',
-      },
-      {
-        text: 'The Verge',
-        link: 'https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming',
-        icon: '<icon_3>',
-      },
+    dateRange: '2022 — 2024',
+    title: 'AI Full Stack Engineer',
+    company: 'Haymeh',
+    workType: 'Freelance',
+    companyLink: '',
+    description: [
+      "Developed a Full Stack AI app to generate CVs for each job application. It gathers data from the user CV, it scraps data from the Job Description and uses OPEN AI's API to generate a personalized CV to download in PDF",
+      'Created sales automation for SME to personalize outreach efforts on LinkedIn. It works with a list of prospects, scrapes user profile and generates a personalize message',
+      "Created several AI bots for clients with custom knowledge base and hooked with OPEN AI's API",
     ],
-    technologies: ['Ember', 'SCSS', 'JavaScript', 'MusicKit.js'],
+    relatedLinks: [],
+    technologies: ['AI', 'Python', 'React', 'LLMs', 'AWS'],
+  },
+  {
+    dateRange: '2020 — 2022',
+    title: 'DevOps Engineer',
+    workType: 'Full-time',
+    company: 'Medallia',
+    companyLink: 'https://www.medallia.com/',
+    description: [
+      'Responsible for monitoring more than 1000 servers with ELK across 5 regions while troubleshooting live issues to avoid customer down time and creating dashboards',
+      'Participate in a cloud providers migration. From AWS to OCI - Update scripts, CI/CD pipelines, Terraform and Ansible code to work with the new provider while keeping the lights on and everything under tight project deadlines',
+      'Run Terraform commands to get the infrastructure deployed - Create playbooks in Ansible to automate the installation and configuration of the necessary packages and orchestrating everything with Jenkins jobs to automate the whole process',
+    ],
+    relatedLinks: [],
+    technologies: [
+      'Jenkins',
+      'AWS',
+      'Ansible',
+      'Terraform',
+      'Kibana',
+      'Monitoring',
+      'Python',
+    ],
+  },
+  {
+    dateRange: '2019 — 2021',
+    title: 'Solutions Engineer',
+    workType: 'Full-time',
+    company: 'Decibel',
+    companyLink: 'https://www.decibel.com/',
+    description: [
+      'Provide customer facing technical implementation and configuration support ensuring timely on-boarding of new customers and improving current implementations',
+      'Understand client requirements and communicate how we can solve their technical challenges, from high-level architecture to code implementation',
+      'reate technical content to show clients how to implement specific use cases or best practices',
+    ],
+    relatedLinks: [],
+    technologies: ['Javascript', 'AWS', 'Integrations', 'APIs'],
   },
 ]
 const Experiences = () => (
@@ -90,9 +102,22 @@ const Experiences = () => (
                   </span>
                 </a>
               </div>
+              <div className="">
+                <div className="text-slate-500">
+                  {exp.workType && <span>{exp.workType}</span>}
+                </div>
+              </div>
             </h3>
-            <p className="mt-2 text-sm leading-normal">{exp.description}</p>
-            <ul className="mt-2 flex flex-wrap" aria-label="Related links">
+            <p className="mt-2 text-sm leading-normal">
+              <ul className="list-disc">
+                {exp.description.map((tech, index) => (
+                  <li key={index} className="">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </p>
+            {/* <ul className="mt-2 flex flex-wrap" aria-label="Related links">
               {exp.relatedLinks &&
                 exp.relatedLinks.map((link, index) => (
                   <li key={index} className="mr-4">
@@ -108,7 +133,7 @@ const Experiences = () => (
                     </a>
                   </li>
                 ))}
-            </ul>
+            </ul> */}
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
               {exp.technologies.map((tech, index) => (
                 <li key={index} className="mr-1.5 mt-2">
