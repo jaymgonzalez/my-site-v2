@@ -15,14 +15,13 @@ const Header = () => {
         const element = document.getElementById(section)
         if (element) {
           const sectionTop = element.offsetTop
-          if (window.scrollY >= sectionTop - 50) {
+          if (window.scrollY >= sectionTop - 25) {
             // Adjust the offset as needed
             currentSection = section
           }
         }
       })
       setActiveSection(currentSection)
-      console.log('Active Section:', currentSection)
     }
 
     window.addEventListener('scroll', handleScroll)
