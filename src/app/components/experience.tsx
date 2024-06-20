@@ -109,13 +109,11 @@ const Experiences = () => (
               </div>
             </h3>
             <ul className="list-disc">
-              <p className="mt-2 text-sm leading-normal">
-                {exp.description.map((tech, index) => (
-                  <li key={index} className="">
-                    {tech}
-                  </li>
-                ))}
-              </p>
+              {exp.description.map((tech, index) => (
+                <li key={index} className="">
+                  <p className="mt-2 text-sm leading-normal">{tech}</p>
+                </li>
+              ))}
             </ul>
             {/* <ul className="mt-2 flex flex-wrap" aria-label="Related links">
               {exp.relatedLinks &&
