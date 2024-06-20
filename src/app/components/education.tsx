@@ -4,20 +4,30 @@ import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
 // dummy courses data
 const courses = [
   {
-    title: 'Course 1',
-    description: 'Course 1 description',
-    technologies: ['Tech 1', 'Tech 2', 'Tech 3'],
+    title: 'BSc in Business and Finance',
+    description: 'Undergraduate in Finance',
+    technologies: ['Business', 'Math', 'Entrepreneurship'],
     githubLink: '',
-    imageAlt: 'Course 1 image',
-    imageSrc: '',
+    imageAlt: 'university_of_sussex_logo',
+    imageSrc: '/assets/university_of_sussex_logo.jpeg',
   },
   {
-    title: 'Course 2',
-    description: 'Course 2 description',
-    technologies: ['Tech 1', 'Tech 2', 'Tech 3'],
+    title: 'Machine Learning Specialization',
+    description:
+      'Fundamentals of ML and how to use these techniques to build real-world AI applications',
+    technologies: ['ML', 'Tensorflow', 'Python'],
     githubLink: '',
-    imageAlt: 'Course 1 image',
-    imageSrc: '',
+    imageAlt: 'coursera_logo',
+    imageSrc: '/assets/coursera_logo.jpeg',
+  },
+  {
+    title: 'Ethereum Blockchain Bootcamp',
+    description:
+      'Ethereum-focused bootcamp teaching fundamentals of the blockchain and Solidity',
+    technologies: ['Web 3', 'Ethereum', 'EVM'],
+    githubLink: '',
+    imageAlt: 'alchemy_university_logo',
+    imageSrc: '/assets/alchemy_university_logo.jpeg',
   },
 ]
 
@@ -66,7 +76,7 @@ const Courses = () => (
             width="200"
             height="48"
             decoding="async"
-            className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+            className="rounded-xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
             style={{ color: 'transparent' }}
             src={course.imageSrc}
           />

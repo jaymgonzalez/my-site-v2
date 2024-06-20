@@ -1,4 +1,3 @@
-import { FaLink } from 'react-icons/fa6'
 import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
 
 const experiences = [
