@@ -73,6 +73,7 @@ const Courses = () => (
           </div>
           <Image
             alt={course.imageAlt}
+            unoptimized
             loading="lazy"
             width="200"
             height="48"
