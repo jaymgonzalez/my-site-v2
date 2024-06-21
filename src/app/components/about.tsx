@@ -11,152 +11,79 @@ const About = () => (
     </div>
     <div>
       <p className="mb-4">
-        Back in 2012, I decided to try my hand at creating custom Tumblr themes
-        and tumbled head first into the rabbit hole of coding and web
-        development. Fast-forward to today, and I’ve had the privilege of
-        building software for an{' '}
+        Back in 2013 I developed my fist website for a small{' '}
         <a
           className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://us.mullenlowe.com/"
+          href="https://agenciadowntown.com/"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="advertising agency (opens in a new tab)"
         >
-          advertising agency
+          advertising agency.{' '}
         </a>
-        , a{' '}
+        Since then, I’ve been helping{' '}
         <a
           className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://starry.com/"
+          href="https://bupa.com/"
           target="_blank"
           rel="noreferrer noopener"
-          aria-label="start-up (opens in a new tab)"
+          aria-label="big insurance companies (opens in a new tab)"
         >
-          start-up
+          big insurance companies{' '}
         </a>
-        , a{' '}
+        implement their analytic software, work for several{' '}
         <a
           className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.apple.com/apple-music/"
+          href="https://www.nissan.com"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="huge corporation (opens in a new tab)"
         >
-          huge corporation
+          high street{' '}
         </a>
-        , and a{' '}
+        brands on how to improve their online sales, worked for a{' '}
         <a
           className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://upstatement.com/"
+          href="https://www.decibel.com/"
           target="_blank"
           rel="noreferrer noopener"
-          aria-label="digital product studio (opens in a new tab)"
+          aria-label="start-up (opens in a new tab)"
         >
-          digital product studio
+          start-up{' '}
         </a>
-        .
+        that was aquired by a{' '}
+        <a
+          className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+          href="https://www.medallia.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="big corporation (opens in a new tab)"
+        >
+          big corporation,{' '}
+        </a>
+        learned how to build software on my own and have contributed to{' '}
+        <a
+          className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+          href="https://openbb.co/"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="open source (opens in a new tab)"
+        >
+          open source.{' '}
+        </a>
       </p>
       <p className="mb-4">
-        My main focus these days is building accessible user interfaces for our
-        customers at{' '}
-        <a
-          className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.klaviyo.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="Klaviyo (opens in a new tab)"
-        >
-          Klaviyo
-        </a>
-        . I most enjoy building software in the sweet spot where design and
-        engineering meet — things that look good but are also built well under
-        the hood. In my free time, Ive also released an{' '}
-        <a
-          className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.newline.co/courses/build-a-spotify-connected-app"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="online video course (opens in a new tab)"
-        >
-          online video course
-        </a>{' '}
-        that covers everything you need to know to build a web app with the
-        Spotify API.
+        My main focus these days is building pipelines and automations. I work
+        on infrastructure and backend systems that help deliver seamless user
+        experiences. I most enjoy building software in the sweet spot where user
+        experience and engineering meet — things that are useful and easy to use
+        but are also built well under the hood. In my free time, I like to play
+        with AI, build side projects and dream about becoming a successfull SaaS
+        founder.
       </p>
       <p>
-        When I’m not at the computer, I’m usually rock climbing, reading,
-        hanging out with my wife and two cats, or running around Hyrule
-        searching for{' '}
-        <span className="group/korok inline-flex lg:cursor-[url('/images/koroks/Elma.png'),_pointer] lg:font-medium lg:text-slate-200">
-          <span className="sr-only">Korok seeds</span>
-          <span
-            className="group-hover/korok:text-red-400 transition duration-75 group-hover/korok:-translate-y-px delay-[50ms]"
-            aria-hidden="true"
-          >
-            K
-          </span>
-          <span
-            className="group-hover/korok:text-orange-400 transition duration-75 group-hover/korok:-translate-y-px delay-[75ms]"
-            aria-hidden="true"
-          >
-            o
-          </span>
-          <span
-            className="group-hover/korok:text-yellow-400 transition duration-75 group-hover/korok:-translate-y-px delay-[100ms]"
-            aria-hidden="true"
-          >
-            r
-          </span>
-          <span
-            className="group-hover/korok:text-lime-400 transition duration-75 group-hover/korok:-translate-y-px delay-[125ms]"
-            aria-hidden="true"
-          >
-            o
-          </span>
-          <span
-            className="group-hover/korok:text-green-400 transition duration-75 group-hover/korok:-translate-y-px delay-[150ms]"
-            aria-hidden="true"
-          >
-            k
-          </span>
-          <span
-            className="group-hover/korok:text-teal-400 transition duration-75 group-hover/korok:-translate-y-px delay-[175ms]"
-            aria-hidden="true"
-          >
-            &nbsp;
-          </span>
-          <span
-            className="group-hover/korok:text-cyan-400 transition duration-75 group-hover/korok:-translate-y-px delay-[200ms]"
-            aria-hidden="true"
-          >
-            s
-          </span>
-          <span
-            className="group-hover/korok:text-sky-400 transition duration-75 group-hover/korok:-translate-y-px delay-[225ms]"
-            aria-hidden="true"
-          >
-            e
-          </span>
-          <span
-            className="group-hover/korok:text-blue-400 transition duration-75 group-hover/korok:-translate-y-px delay-[250ms]"
-            aria-hidden="true"
-          >
-            e
-          </span>
-          <span
-            className="group-hover/korok:text-indigo-400 transition duration-75 group-hover/korok:-translate-y-px delay-[275ms]"
-            aria-hidden="true"
-          >
-            d
-          </span>
-          <span
-            className="group-hover/korok:text-violet-400 transition duration-75 group-hover/korok:-translate-y-px delay-[300ms]"
-            aria-hidden="true"
-          >
-            s
-          </span>
-        </span>
-        .
+        When I’m not at the computer, I’m working out, reading, walking in
+        nature, dancing bachata or eating out with my girlfriend.
       </p>
     </div>
   </section>
