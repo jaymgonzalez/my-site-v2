@@ -10,7 +10,7 @@ const courses = [
     technologies: ['Business', 'Math', 'Entrepreneurship'],
     githubLink: '',
     imageAlt: 'university_of_sussex_logo',
-    imageSrc: `${prefix}'/assets/university_of_sussex_logo.jpeg`,
+    imageSrc: `${prefix}/assets/university_of_sussex_logo.jpeg`,
   },
   {
     title: 'Machine Learning Specialization',
