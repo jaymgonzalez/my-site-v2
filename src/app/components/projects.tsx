@@ -1,19 +1,26 @@
 import Image from 'next/image'
 import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
-import { prefix } from '../helpers/prefix'
 import Link from 'next/link'
 
 const projects = [
   {
     title: 'Generate NFTs',
     description:
-      'Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+      'dApp built from the ground up as the final exercise for the Ethereum Bootcamp. It allow users to upload images/gifs, add metadata for personalization, and it generates a custom NFTs. It consist of a contract deployed in Polygon blockhain that stores the image in IPFS, a front end built with React and a serverless infrastructure deployed in Github Pages and CICD usng GitHub Actions.',
     githubLink: 'https://jaymgonzalez.github.io/generatenfts/',
     technologies: ['React', 'Web3', 'Smart Contracts', 'Serverless'],
-    imageAlt: 'Spotify Profile app homepage',
-    imageSrc: `${prefix}/assets/generatenfts.png`,
+    imageAlt: 'Generate NFTs dApp homepage',
+    imageSrc: `/assets/generatenfts.webp`,
   },
-  // Add more project objects as needed
+  {
+    title: 'Robo Recruiter',
+    description:
+      'AI SaaS developed with React, Flask and OpenAI API. It generates a personalize CV based on a current CV and the job the candidate wants to apply for. It gathers data from the job description, finding the right words and tone of voice to maximize the chances of being selected and it generates the output using a CV template to build the CV in PDF.',
+    githubLink: 'https://jaymgonzalez.github.io/generatenfts/',
+    technologies: ['AI', 'React', 'Flask', 'SaaS'],
+    imageAlt: 'Robo Recruiter SaaS profile page',
+    imageSrc: `/assets/roborecruiter.webp`,
+  },
 ]
 
 const Project = () => (
@@ -63,7 +70,7 @@ const Project = () => (
             decoding="async"
             className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
             style={{ color: 'transparent' }}
-            src={project.imageSrc}
+            src={`/my-site-v2${project.imageSrc}`}
           />
         </div>
       </li>
