@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
 
 const experiences = [
@@ -163,7 +164,7 @@ const Experience = () => {
         <Experiences />
       </ol>
       <div className="mt-12">
-        <a
+        <Link
           className="inline-flex items-center leading-tight font-semibold text-slate-200 group"
           href="/resume.pdf"
           target="_blank"
@@ -184,7 +185,7 @@ const Experience = () => {
               />
             </span>
           </span>
-        </a>
+        </Link>
       </div>
     </section>
   )

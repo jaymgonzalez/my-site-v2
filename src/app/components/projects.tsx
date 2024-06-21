@@ -1,15 +1,17 @@
 import Image from 'next/image'
 import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
+import { prefix } from '../helpers/prefix'
+import Link from 'next/link'
 
 const projects = [
   {
-    title: 'Spotify Profile',
+    title: 'Generate NFTs',
     description:
       'Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-    githubLink: 'https://github.com/bchiang7/spotify-profile',
-    technologies: ['React', 'Express', 'Spotify API', 'Heroku'],
+    githubLink: 'https://jaymgonzalez.github.io/generatenfts/',
+    technologies: ['React', 'Web3', 'Smart Contracts', 'Serverless'],
     imageAlt: 'Spotify Profile app homepage',
-    imageSrc: '',
+    imageSrc: `${prefix}/assets/generatenfts.png`,
   },
   // Add more project objects as needed
 ]
@@ -87,7 +89,7 @@ const Projects = () => {
         </ul>
       </div>
       <div className="mt-12">
-        <a
+        <Link
           className="inline-flex items-center leading-tight font-semibold text-slate-200 group"
           aria-label="View Full Project Archive"
           href="/archive"
@@ -106,7 +108,7 @@ const Projects = () => {
               />
             </span>
           </span>
-        </a>
+        </Link>
       </div>
     </section>
   )
