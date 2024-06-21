@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { TfiArrowRight, TfiArrowTopRight } from 'react-icons/tfi'
+import { prefix } from '../helpers/prefix'
 
 // dummy courses data
 const courses = [
@@ -9,7 +10,7 @@ const courses = [
     technologies: ['Business', 'Math', 'Entrepreneurship'],
     githubLink: '',
     imageAlt: 'university_of_sussex_logo',
-    imageSrc: '/assets/university_of_sussex_logo.jpeg',
+    imageSrc: `${prefix}'/assets/university_of_sussex_logo.jpeg`,
   },
   {
     title: 'Machine Learning Specialization',
@@ -18,7 +19,7 @@ const courses = [
     technologies: ['ML', 'Tensorflow', 'Python'],
     githubLink: '',
     imageAlt: 'coursera_logo',
-    imageSrc: '/assets/coursera_logo.jpeg',
+    imageSrc: `${prefix}/assets/coursera_logo.jpeg`,
   },
   {
     title: 'Ethereum Blockchain Bootcamp',
@@ -27,7 +28,7 @@ const courses = [
     technologies: ['Web 3', 'Ethereum', 'EVM'],
     githubLink: '',
     imageAlt: 'alchemy_university_logo',
-    imageSrc: '/assets/alchemy_university_logo.jpeg',
+    imageSrc: `${prefix}/assets/alchemy_university_logo.jpeg`,
   },
 ]
 
