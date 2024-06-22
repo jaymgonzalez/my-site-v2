@@ -15,6 +15,7 @@ import {
 } from 'react-icons/si'
 import { IconType } from 'react-icons'
 import { GiMustache } from 'react-icons/gi'
+import { GrDocker } from 'react-icons/gr'
 
 interface LanguageIcons {
   JavaScript: IconType
@@ -26,6 +27,7 @@ interface LanguageIcons {
   HTML: IconType
   CSS: IconType
   Mustache: IconType
+  Dockerfile: IconType
 }
 
 const languageIcons: LanguageIcons = {
@@ -38,6 +40,7 @@ const languageIcons: LanguageIcons = {
   HTML: SiHtml5,
   CSS: SiCss3,
   Mustache: GiMustache,
+  Dockerfile: GrDocker,
 }
 
 interface LanguageIconProps {
