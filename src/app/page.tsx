@@ -2,6 +2,13 @@ import Footer from './components/footer'
 import Header from './components/header'
 import Main from './components/main'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Jay M Gonzalez - Portfilio Site',
+  description: 'My Portfolio Site.',
+}
+
 export default function Home() {
   return (
     <>
