@@ -61,7 +61,7 @@ const About = () => (
         >
           big corporation,{' '}
         </a>
-        learned how to build software on my own and have contributed to{' '}
+        learned how to build software, have contributed to{' '}
         <a
           className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
           href="https://openbb.co/"
@@ -69,8 +69,10 @@ const About = () => (
           rel="noreferrer noopener"
           aria-label="open source (opens in a new tab)"
         >
-          open source.{' '}
+          open source,{' '}
         </a>
+        and left everthing to create my own company and offer my services as a
+        freelancer.
       </p>
       <p className="mb-4">
         My main focus these days is building pipelines and automations. I work
@@ -78,8 +80,8 @@ const About = () => (
         experiences. I most enjoy building software in the sweet spot where user
         experience and engineering meet — things that are useful and easy to use
         but are also built well under the hood. In my free time, I like to play
-        with AI, build side projects and dream about becoming a successfull SaaS
-        founder.
+        with AI, build side projects and, dream about becoming a successfull
+        SaaS founder.
       </p>
       <p>
         When I’m not at the computer, I’m working out, reading, walking in
