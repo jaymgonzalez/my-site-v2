@@ -68,7 +68,7 @@ const Project = () => (
             width="200"
             height="48"
             decoding="async"
-            className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+            className="rounded-xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
             style={{ color: 'transparent' }}
             src={`/my-site-v2${project.imageSrc}`}
           />

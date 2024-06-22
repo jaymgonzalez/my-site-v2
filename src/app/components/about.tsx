@@ -71,8 +71,7 @@ const About = () => (
         >
           open source,{' '}
         </a>
-        and left everthing to create my own company and offer my services as a
-        freelancer.
+        and created my own company to offer my services as a freelancer.
       </p>
       <p className="mb-4">
         My main focus these days is building pipelines and automations. I work
