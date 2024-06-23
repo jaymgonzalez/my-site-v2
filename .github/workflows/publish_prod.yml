@@ -40,7 +40,7 @@ jobs:
         with:
           name: next-build
 
-      -run: ls -la
+      - run: ls -la
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
