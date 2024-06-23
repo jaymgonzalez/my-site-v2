@@ -7,6 +7,9 @@ const nextConfig = {
   reactStrictMode: true,
   images: { unoptimized: true },
   basePath: isProd ? '' : '/my-site-v2',
+  env: {
+    NODE_ENV: process.env.NODE_ENV,
+  },
 }
 
 module.exports = nextConfig
