@@ -2,7 +2,7 @@ name: publish-to-github-pages
 on:
   push:
     branches:
-      - main
+      - dev
 
 permissions:
   contents: read
@@ -30,7 +30,7 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
-        run: NEXT_PUBLIC_BASE_PATH=https://jaymgonzalez.github.io/my-site-v2 yarn build
+        run: yarn build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
