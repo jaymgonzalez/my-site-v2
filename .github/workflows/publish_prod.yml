@@ -17,13 +17,14 @@ jobs:
 
       - name: Build with Next.js 🏗️
         run: |
-          export NODE_ENV=prod
+          export NODE_ENV=production
           yarn build
 
       - name: Upload artifact 📡
         uses: actions/upload-artifact@v4
         with:
           path: out/
+          name: next-build
 
   deploy:
     if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
@@ -34,7 +35,7 @@ jobs:
       - name: Download artifact 📡
         uses: actions/download-artifact@v4
         with:
-          name: out
+          name: next-build
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -44,4 +45,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync out/ s3://jaymgonzalez.com --delete
+        run: aws s3 sync . s3://jaymgonzalez.com --delete
