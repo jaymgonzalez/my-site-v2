@@ -1,17 +1,17 @@
 const Footer = () => (
   <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
     <p>
-      Loosely designed in
+      Website designed by
       <a
-        href="https://www.figma.com/"
+        href="https://brittanychiang.com/"
         className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
         target="_blank"
         rel="noreferrer noopener"
-        aria-label="Figma (opens in a new tab)"
+        aria-label="Britanny Chiang(opens in a new tab)"
       >
         {' '}
-        Figma
-      </a>
+        Britanny Chiang
+      </a>{' '}
       and coded in
       <a
         href="https://code.visualstudio.com/"
@@ -23,7 +23,7 @@ const Footer = () => (
         {' '}
         Visual Studio Code
       </a>
-      by yours truly. Built with
+      . Built with
       <a
         href="https://nextjs.org/"
         className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
@@ -33,7 +33,7 @@ const Footer = () => (
       >
         {' '}
         Next.js
-      </a>
+      </a>{' '}
       and
       <a
         href="https://tailwindcss.com/"
@@ -47,14 +47,25 @@ const Footer = () => (
       </a>
       , deployed with
       <a
-        href="https://vercel.com/"
+        href="https://aws.amazon.com/"
         className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
         target="_blank"
         rel="noreferrer noopener"
-        aria-label="Vercel (opens in a new tab)"
+        aria-label="AWS Amazon (opens in a new tab)"
       >
         {' '}
-        Vercel
+        Amazon S3{' '}
+      </a>
+      and
+      <a
+        href="https://docs.github.com/en/actions"
+        className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="Github actions docs (opens in a new tab)"
+      >
+        {' '}
+        GitHub Actions
       </a>
       . All text is set in the
       <a
