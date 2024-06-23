@@ -30,6 +30,8 @@ const courses = [
   },
 ]
 
+const basePath = process.env.NODE_ENV === 'production' ? '' : '/my-site-v2'
+
 const Courses = () => (
   <>
     {courses.map((course, index) => (
@@ -78,9 +80,7 @@ const Courses = () => (
             decoding="async"
             className="rounded-xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
             style={{ color: 'transparent' }}
-            src={`${
-              process.env.NODE_ENV === 'production' ? '' : '/my-site-v2'
-            }${course.imageSrc}`}
+            src={`${basePath}${course.imageSrc}`}
           />
         </div>
       </li>

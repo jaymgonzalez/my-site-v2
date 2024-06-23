@@ -23,6 +23,8 @@ const projects = [
   },
 ]
 
+const basePath = process.env.NODE_ENV === 'production' ? '' : '/my-site-v2'
+
 const Project = () => (
   <>
     {projects.map((project, index) => (
@@ -70,9 +72,7 @@ const Project = () => (
             decoding="async"
             className="rounded-xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
             style={{ color: 'transparent' }}
-            src={`${
-              process.env.NODE_ENV === 'production' ? '' : '/my-site-v2'
-            }${project.imageSrc}`}
+            src={`${basePath}${project.imageSrc}`}
           />
         </div>
       </li>
