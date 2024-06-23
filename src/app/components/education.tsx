@@ -31,7 +31,7 @@ const courses = [
 ]
 
 const Courses = () => {
-  const basePath = process.env.NODE_ENV === 'production' ? '' : '/my-site-v2'
+  const basePath = process.env.TARGET_ENV === 'production' ? '' : '/my-site-v2'
   return (
     <>
       {courses.map((course, index) => (
