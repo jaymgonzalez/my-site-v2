@@ -20,7 +20,7 @@ jobs:
 
       - name: Build with Next.js 🏗️
         run: |
-          export NODE_ENV=prod
+          export NODE_ENV=production
           yarn build
 
       - name: Upload artifact 📡
