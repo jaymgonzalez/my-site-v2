@@ -10,6 +10,7 @@ import {
   SiHtml5,
   SiJupyter,
   SiSolidity,
+  SiTerraform,
   SiTypescript,
   SiVuedotjs,
 } from 'react-icons/si'
@@ -28,6 +29,7 @@ interface LanguageIcons {
   CSS: IconType
   Mustache: IconType
   Dockerfile: IconType
+  HCL: IconType
 }
 
 const languageIcons: LanguageIcons = {
@@ -41,6 +43,7 @@ const languageIcons: LanguageIcons = {
   CSS: SiCss3,
   Mustache: GiMustache,
   Dockerfile: GrDocker,
+  HCL: SiTerraform,
 }
 
 interface LanguageIconProps {
